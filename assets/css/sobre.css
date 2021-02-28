@@ -1,0 +1,27 @@
+.interna__sobre { 
+    background-image: url(../img/bg-sobre.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.missao__sobre {
+    padding-top: 60px;
+}
+
+.missao__sobre p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1em;
+    padding-right: 60px;
+}
+
+.missao__sobre ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.foto-equipe {
+    padding-top: 20px;
+}

@@ -1,14 +1,11 @@
 /* Cores Padrão*/
-
 :root {
     --defaultblack: #000000;
     --defaultwhite: #FFFFFF;
     --primary: #FEC63E;
 }
 
-
 /* Estilos Gerais */
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -59,9 +56,53 @@ p {
     border-top: 3px solid var(--defaultblack);
 }
 
+.subtitle-interno {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--defaultblack);
+    margin-bottom: 20px;
+}
+
+.subtitle-interno::after {
+    content: '';
+    display: block;
+    width: 60px;
+    margin: 8px 0;
+    border-top: 3px solid var(--defaultblack);
+}
+
+img {
+    display: block;
+}
+
+.introducao-interna { 
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    background-size: cover;
+    color: var(--defaultwhite);
+    padding-top: 30px;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.introducao-interna h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    margin: 10px auto;
+    border-top: 3px solid var(--defaultwhite);
+}
 
 /* Header */
-
 .header {
     position: sticky;
     top: 0;
@@ -96,13 +137,15 @@ p {
     padding: 10px 0;
 }
 
+.header_menu ul li a.menu-ativo {
+    color: var(--defaultwhite);
+}
+
 .header_menu li a:hover {
     color: var(--defaultwhite);
 }
 
-
 /* Introdução */
-
 .introducao {
     width: 100%;
     height: 380px;
@@ -149,9 +192,7 @@ p {
     letter-spacing: .1em;
 }
 
-
 /* Produtos */
-
 .produtos {
     padding: 60px 0;
 }
@@ -198,9 +239,7 @@ p {
     margin-bottom: 20px;
 }
 
-
 /* Portifólio */
-
 .portifolio {
     background-color: var(--defaultblack);
     padding: 40px 0;
@@ -220,4 +259,134 @@ p {
 
 .portifolio .call p {
     color: var(--defaultwhite);
+}
+
+/* Qualidade */
+.qualidade {
+    padding: 60px 0;
+}
+
+.qualidade::after {
+    content: "";
+    display: block;
+    width: 634px;
+    height: 83px;
+    background-image: url(../img/linhas.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 210px;
+    left: 164px;
+    z-index: -1;
+}
+
+.qualidade img {
+    margin: 0 auto;
+}
+
+.qualidade_lista {
+    padding: 30px 0 ;
+    overflow: auto;
+}
+
+.qualidade_lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade_lista h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 10px;
+}
+
+.qualidade_lista h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    margin: 5px auto;
+    border-top: 3px solid var(--defaultblack);
+}
+
+/* Imagen antes do footer*/
+
+.ft-box {
+    width: 100%;
+    height: 220px;
+    background-image: url(../img/bg-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.ft-box .quote-externo {
+    max-width: 400px;
+    padding: 40px 0 ;
+}
+
+/* Footer */
+
+.footer {
+    padding: 20px 0;
+    width: 100%;
+    background-color: var(--defaultblack);
+    color: var(--defaultwhite);
+}
+
+.footer h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primary);
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 10px;
+}
+
+.footer h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 0 auto;
+    margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+    padding-right: 40px;
+}
+
+.footer_contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_social ul li {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.footer_social ul li a {
+    border: 3px solid var(--primary);
+    display: block;
+    padding: 10px;
+}
+
+.footer_social ul li a:hover {
+    border: 3px solid var(--defaultwhite);
+}
+
+/* Copy Right */
+
+.copy {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 20px 0;
 }
