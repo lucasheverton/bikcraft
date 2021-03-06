@@ -76,13 +76,15 @@ p {
 
 img {
     display: block;
+    margin: 0 auto;
 }
 
 .introducao-interna { 
     width: 100%;
     height: 160px;
     text-align: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: var(--defaultwhite);
     padding-top: 30px;
 }

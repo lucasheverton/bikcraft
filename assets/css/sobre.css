@@ -1,7 +1,6 @@
 .interna__sobre { 
     background-image: url(../img/bg-sobre.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
 }
 
 .missao__sobre {
@@ -19,7 +18,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     line-height: 30px;
-
 }
 
 .foto-equipe {
