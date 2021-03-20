@@ -75,6 +75,7 @@ p {
 }
 
 img {
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -129,7 +130,7 @@ img {
     margin-left: 25px;
 }
 
-.header_menu li a {
+.header_menu ul li a {
     color: var(--defaultblack);
     font-weight: bold;
     text-transform: uppercase;
