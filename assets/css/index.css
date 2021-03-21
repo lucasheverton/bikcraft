@@ -453,3 +453,25 @@ img {
     transform: none;
     transition: opacity 800ms, transform 800ms;
 }
+
+/* Form */
+
+#form-erro {
+    color: var(--defaultblack);
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+#form-erro h2 {
+    color: red;
+}
+
+#form-sucesso {
+    color: var(--defaultblack);
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+#form-sucesso h2 {
+    color: green;
+}
+
+

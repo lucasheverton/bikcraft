@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/produtos.css">
     <link rel="stylesheet" href="assets/css/resposivo.css">
     <script>document.documentElement.classList.add("js");</script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <title>Bikcraft - Produtos</title>
 </head>
 
@@ -119,19 +120,21 @@
         <div class="container">
             <h2 class="subtitle">Orçamento</h2>
 
-            <form id="form_orcamento" class="form grid-8">
+            <form id="form_orcamento" class="form grid-8 form_php" method="POST" action="./enviar-sendgrid.php">
 
                 <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" name="nome" required>
 
                 <label for="email">E-mail</label>
-                <input type="text" id="email">
+                <input type="email" id="email" name="email" required>
 
                 <label for="tele">Telefone</label>
-                <input type="text" id="tele">
+                <input type="text" id="tele" name="telefone">
 
-                <label for="espc">Especificações</label>
-                <textarea id="espc" placeholder="Mensagem"></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+
+                <label class="g-recaptcha" data-sitekey="6LdVMYkaAAAAACl6oCYMuN3NW_0p0dDoVtMzMjSs"></label>
 
                 <button class="btn" type="submit">Enviar</button>
             </form>
@@ -208,6 +211,7 @@
 
     </footer>
     <script type="text/javascript" src="assets/js/simple-anime.js"></script>
+    <script type="text/javascript" src="assets/js/simple-form.js"></script>
     <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 
