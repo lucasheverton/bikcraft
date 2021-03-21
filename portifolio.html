@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/portifolio.css">
     <link rel="stylesheet" href="assets/css/resposivo.css">
+    <script>document.documentElement.classList.add("js");</script>
     <title>Bikcraft - Portifólio</title>
 </head>
 
@@ -39,7 +40,7 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" data-slide="quote">
         <blockquote class="quote_clientes">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente possimus 
@@ -47,10 +48,26 @@
             </p>
             <cite>Lucas Heverton</cite>
         </blockquote>
+
+        <blockquote class="quote_clientes">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente possimus 
+                rerum iste tempora ipsa dolore cupiditate nesciunt, suscipit eos consectetur.
+            </p>
+            <cite>Maria Madalena</cite>
+        </blockquote>
+
+        <blockquote class="quote_clientes">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sapiente possimus 
+                rerum iste tempora ipsa dolore cupiditate nesciunt, suscipit eos consectetur.
+            </p>
+            <cite>Matheu David</cite>
+        </blockquote>
     </section>
 
     <section class="portifolio">
-        <div class="container">
+        <div class="container" data-slide="portifoio">
             <ul>
                 <li class="grid-8">
                     <img src="assets/img/portfolio/retro.jpg" alt="Retrô">
@@ -64,7 +81,19 @@
                     <img src="assets/img/portfolio/esporte.jpg" alt="Esporte">
                 </li>
             </ul>
+            <ul>
+                <li class="grid-8">
+                    <img src="assets/img/portfolio/passeio.jpg" alt="Passeio">
+                </li>
 
+                <li class="grid-8">
+                    <img src="assets/img/portfolio/retro.jpg" alt="Retrô">
+                </li>
+
+                <li class="grid-16">
+                    <img src="assets/img/portfolio/esporte.jpg" alt="Esporte">
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -120,6 +149,8 @@
         </div>
 
     </footer>
+    <script type="text/javascript" src="assets/js/simple-slide.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 
 </html>
