@@ -57,6 +57,11 @@
 .contato_form button {
     background: none;
     padding: 8px 40px;
+    margin-top: 15px;
+}
+
+.g-recaptcha {
+    margin-bottom: 15px!important;
 }
 
 .orcamento_dados {
@@ -117,4 +122,9 @@
 
 .contato_map {
     margin-bottom: 50px;
+}
+
+.contato_map iframe {
+    width: 100%;
+    height: 525px;
 }
