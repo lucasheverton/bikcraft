@@ -520,6 +520,7 @@ p {
     text-transform: uppercase;
     color: var(--primary);
     font-weight: bold;
+    transition: all .3s ease;
 }
 
 .btn:hover {
@@ -635,6 +636,7 @@ img {
     font-size: 14px;
     line-height: 20px;
     padding: 10px 0;
+    transition: all .4s ease;
 }
 
 .header_menu ul li a.menu-ativo {
@@ -697,6 +699,10 @@ img {
     padding: 60px 0;
 }
 
+.produtos_lista {
+    cursor: not-allowed;
+}
+
 .produtos_lista li {
     background-color: var(--primary);
     text-align: center;
@@ -750,7 +756,7 @@ img {
 }
 
 .portifolio .subtitle::after {
-    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .portifolio>div>ul>li:last-child {
