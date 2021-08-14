@@ -24,3 +24,8 @@ if (window.SimpleForm) {
         sucesso: "<div id='form-sucesso'><h2>Formulário enviado com sucesso</h2><p>Em breve eu entro em contato com você.</p></div>" // mensagem de sucesso
       });
 }
+
+var data = new Date();
+var ano = data.getFullYear();
+
+document.querySelector(".hour").innerText = `${ano}`;
