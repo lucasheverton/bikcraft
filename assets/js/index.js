@@ -25,7 +25,21 @@ if (window.SimpleForm) {
       });
 }
 
+/* Add FullYear dinamic */
 var data = new Date();
 var ano = data.getFullYear();
 
 document.querySelector(".hour").innerText = `${ano}`;
+
+/* Add event scrool to top */
+var scrollToTopBtn = document.getElementById("scrollToTop");
+var rootScroll = document.documentElement;
+
+function scrollToTop() {
+    rootScroll.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
