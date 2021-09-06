@@ -3,6 +3,6 @@
 > [Bikcraft](https://lucasheverton.github.io/bikcraft/)
 
 <div align="center">
-  <img width="75%" src="./bikcraft.gif" alt="Apresentation Bikcraft" title="Apresentation Bikcraft"/>
+  <img width="80%" src="./bikcraft.gif" alt="Apresentation Bikcraft" title="Apresentation Bikcraft"/>
 </div>
 
