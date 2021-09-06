@@ -1,4 +1,4 @@
-## A simple website about bicicles.
+## A simple responsive website about bicicles.
 
 > [Bikcraft](https://lucasheverton.github.io/bikcraft/)
 
